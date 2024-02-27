@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    background-color: rgb(91, 125, 173);
+    padding: 32px;
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container{
+    max-width: 40%;
+    background-color: rgb(91, 125, 173);
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: white;
+    margin: 5px;
+    margin-top: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+.button1{
+    background-color:rgb(88, 134, 19);
+    color: white;
+    padding: 0px 15px;
+    border-radius: 0px;
+    border: 10px;
+    cursor: pointer;
+}
+.button1:hover{
+    background-color:rgb(75, 114, 16);
+}
+.button2{
+    background-color:red;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 0px;
+    border: 10px;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color:rgb(228, 2, 2);
+}
+.button3{
+    display: inline-block;
+    background-image: url('Edit.PNG');
+    background-size: cover; /* Adjust the size of the background image */
+    width: 50px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border: none;
+    cursor: pointer;
+}
+.button4{
+    display: inline-block;
+    background-image: url('Delete.PNG');
+    background-size: cover; /* Adjust the size of the background image */
+    width: 50px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border: none;
+    cursor: pointer;
+}
+.button-container2{
+    display: inline-flex
+}
+
+
+.overlay, .overlay2 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup,.popup2 {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form,.form2,.form3{
+    display:flex;
+    flex-direction:column;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.form label,.form2 label,.form3 label{
+    margin-top:0px;
+    padding:5px;
+    font-size:20px;
+}
+
+.form input,.form2 input,.form3 input{
+    height: 35px;
+    margin-bottom: 15px
+}
+
+.table-container {
+    max-width: 80%;
+    margin: auto;
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    justify-content: space-between;
+    font-size: 20px
+}
+
+td:nth-child(1){
+    width: 5%;
+}
+td:nth-child(2){
+    width: 5%;
+}
+td:nth-child(3){
+    width: 15%;
+}
+td:nth-child(4){
+    width: 10%;
+}
+td:nth-child(5){
+    width: 15%;
+}
+td:nth-child(6){
+    width: 15%;
+}
+td:nth-child(7){
+    width: 10%;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #007BFF;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    border-radius: 3px;
+}
+
+.page-link.current {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
